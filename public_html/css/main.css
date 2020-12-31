@@ -1,0 +1,22 @@
+html, body {
+  margin: 0;
+	padding: 0;
+  border: 0;
+  width: fit-content;
+ }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  }
+
+.header-logo {
+margin:0 1rem;
+}
+
+.header-title {
+  display: none;
+}
+
+
+

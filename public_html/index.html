@@ -2,12 +2,9 @@
 <html lang="en-gb">
 
 <head>
-
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
+  <script src="wpscripts/index.js" async></script>
   <meta charset="UTF-8" />
   <title>St. Joseph's Highgate</title>
   <meta name="generator" content="Serif WebPlus X8 (16,0,4,32)" />
@@ -16,13 +13,22 @@
     content="St. Josephs Highgate,St. Joseph's Church Highgate,St. Joseph's Catholic Church  Highgate,Catholic Church in London,Catholic Churches in North London,Diocese of Westminster,The Passionists" />
   <meta name="description"
     content="St. Josephs Highgate,St. Joseph's Church Highgate,St. Joseph's Catholic Church  Highgate,Catholic Church in London,Catholic Churches in North London,Diocese of Westminster,The Passionists" />
+</head>
 
+<body>
   <div class="header">
-    <img class="header-logo" src="css/wpimages/wp720cab5e_06.png" alt="Church Logo">
+    <a href="#home">
+      <img class="header-logo" src="css/wpimages/wp720cab5e_06.png" alt="Church Logo">
+    </a>
     <h1 class="header-title">St. Joseph's Church <br> Highgate</h1>
+    <i class="header-hamburguer fa fa-bars fa-4x" onclick="mobileLinksToggle()"></i>
   </div>
-
-
+  <div class="header-links" id="myLinks">
+    <a href="#about">About Us</a>
+    <a href="#parishlife">Parish Life</a>
+    <a href="#contact">Contact Us</a>
+    <a href="#links">Links</a>
+  </div>
 
   <!-- CORONAVIRUS INSERT ------------------------------------------------- ---->
   <!--        <p class="Body P-7"> <a href="Bulletins/CORONAVIRUS PAGE.pdf" target="_blank" class="C-4">Church reopening</a><span class="C-3">  for individual private prayer 10am - 12 noon Wednesday, Saturday & Sunday, from Wednesday 17th June.</p>

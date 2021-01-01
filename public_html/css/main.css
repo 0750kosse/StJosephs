@@ -8,15 +8,42 @@ html, body {
 .header {
   display: flex;
   flex-direction: row;
-  }
+  overflow: hidden;
+  position: relative;
+  background-color:turquoise;
+}
 
 .header-logo {
-margin:0 1rem;
+ margin:0 1rem;
 }
 
 .header-title {
+  text-align: center;
+  margin:3rem 0 0 2rem;
+}
+
+.header-hamburguer {
+  margin: 3rem 0 0 4rem;
+}
+
+.header-links {
   display: none;
 }
 
+.header-links a:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.active {
+  position:absolute;
+  display: flex;
+  flex-direction: column;
+  top:10rem;
+  left: 25rem;
+  width: 30%;
+  background: whitesmoke;
+  padding:1.5rem;
+  }
 
 

@@ -11,10 +11,10 @@ html, body {
   display: flex;
   flex-direction: row;
   overflow: hidden;
-  position: relative;
-  color:#88C449;
-  margin-bottom: 5%;
-  
+  position: sticky;
+  top:0;
+  color:whitesmoke;
+  background-color: #2C6BBC;
 }
 
 .header-logo {
@@ -54,7 +54,7 @@ html, body {
 
 .active a {
   text-decoration: none;
-  background-color:#ddd;
+  background-color:whitesmoke;
   color:black;
   padding: 1rem;
   border-bottom:1px solid whitesmoke;
@@ -67,9 +67,8 @@ html, body {
 
 /* MAIN SECTION */
 
-main{
-  border-top: 1px solid #88C449;
-  padding-top:1rem;
+main {
+ padding-top:1rem;
 }
 
 .main-text {

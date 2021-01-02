@@ -5,12 +5,16 @@ html, body {
   width: fit-content;
  }
 
+ /* HEADER */
+
 .header {
   display: flex;
   flex-direction: row;
   overflow: hidden;
   position: relative;
-  background-color:turquoise;
+  color:#88C449;
+  margin-bottom: 5%;
+  
 }
 
 .header-logo {
@@ -23,27 +27,73 @@ html, body {
 }
 
 .header-hamburguer {
-  margin: 3rem 0 0 4rem;
+  display: block;
+  position:absolute;
+  top: 25%;
+  right: 5%;
 }
 
-.header-links {
+/* NAV ITEMS*/
+
+.nav-links {
   display: none;
-}
-
-.header-links a:hover {
-  background-color: yellow;
-  color: black;
 }
 
 .active {
   position:absolute;
   display: flex;
   flex-direction: column;
-  top:10rem;
-  left: 25rem;
-  width: 30%;
-  background: whitesmoke;
-  padding:1.5rem;
-  }
+  top:8rem;
+  left: 19rem;
+  width: 60%;
+  margin-left: 1rem;
+  font-size: 30px;
+  padding: 2rem;
+  line-height: 1.8;
+ }
 
+.active a {
+  text-decoration: none;
+  background-color:#ddd;
+  color:black;
+  padding: 1rem;
+  border-bottom:1px solid whitesmoke;
+}
 
+#myLinks a:hover {
+  background-color: #88C449;
+  color: white;
+}
+
+/* MAIN SECTION */
+
+main{
+  border-top: 1px solid #88C449;
+  padding-top:1rem;
+}
+
+.main-text {
+  font-size: 24px;
+  padding: 1rem;
+}
+
+.main-picture {
+  width: 100%;
+  height: 18rem;
+}
+
+/* SLIDES */
+
+.slider-container {
+  background: #88C449;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;;
+  overflow-x: auto;
+  scroll-snap-type: mandatory;
+  scroll-behavior: smooth;
+}

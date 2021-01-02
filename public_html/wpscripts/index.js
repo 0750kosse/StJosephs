@@ -1,7 +1,7 @@
 console.log(2 + 2)
 
 const mobileMenu = document.querySelector(".header-hamburguer");
-const menuLinks = document.querySelector(".header-links");
+const menuLinks = document.querySelector(".nav-links");
 
 function mobileLinksToggle() {
   if (menuLinks.style.display === "flex") {

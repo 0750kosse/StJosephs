@@ -7,6 +7,7 @@ html, body {
 
 body {
   font-size: 18px;
+  background-color: whitesmoke;
 }
  /* HEADER */
 
@@ -178,6 +179,32 @@ iframe{
 
 .slide-container .slide img {
   width: 100%;
+}
+
+/* ASIDE */
+
+.aside-container {
+  margin-top: 3rem;;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.aside-container_link {
+  width: 45%;
+  height: 5rem;
+  background: #88C449;
+  color:white;
+  text-align: center;
+  padding: .3rem;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+}
+
+.aside-container_link a {
+  margin-top: 1rem;
+  text-decoration: none;
+  color: white;
 }
 
 /* FOOTER */

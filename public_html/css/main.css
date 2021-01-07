@@ -23,12 +23,14 @@ body {
 
 .header-logo {
  margin:0 1rem;
+ max-width: 50%;
 }
 
 .header-title {
   text-align: center;
   margin:3rem 0 0 0;
   font-size:20px;
+  margin-left: -4%;
 }
 
 .header-hamburguer {
@@ -36,6 +38,7 @@ body {
   position:absolute;
   top: 25%;
   right: 5%;
+  margin:1rem 0 0 0;
 }
 
 /* NAV ITEMS*/
@@ -87,7 +90,7 @@ main {
 
 /* SLIDER */
 
-iframe{
+iframe {
   width: 100vw;
   height: calc(100vw/1.77);
 }
@@ -119,8 +122,8 @@ iframe{
   text-align: center;
 }
 
-.slide.fade img {
-  height: 250px;
+.slide-text a {
+  color: white
 }
 
 .slide-container .prev:hover,
@@ -181,6 +184,10 @@ iframe{
   width: 100%;
 }
 
+.slide.fade img, .slide-item {
+  height: 400px;
+}
+
 /* ASIDE */
 
 .aside-container {
@@ -210,29 +217,46 @@ iframe{
 /* FOOTER */
 
 footer {
-  background-color: whitesmoke;
+background-color: whitesmoke;
 }
 
-footer h4 {
-  text-align: center;
-}
-
-.social-media {
+.find-us .card {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  background: #E8E8E8;
+  padding: 1rem;
+  width: 85%;
+  border-radius: 10px;
 }
 
-.social-media a {
-margin-left: 10%;
+.find-us .card h3 {
+  text-align: center;
+  margin:0;
 }
 
-.social-media_twitter,
-.social-media_youtube {
+.find-us .card p {
+  border-bottom:1px solid grey; 
+}
+
+.find-us .social {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.find-us .twitter {
+  width: 60%;
+} 
+.find-us .youtube {
   width: 50%;
+  margin: 10% 0 0 30%;
 }
 
 .footer-credits {
-  background-color:#ddd;
+  background-color:#505050;
   color:#88C449;
   text-align: center;
 }

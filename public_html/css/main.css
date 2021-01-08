@@ -215,10 +215,19 @@ iframe {
   color: white;
 }
 
+/* DONATE */
+.donate {
+  margin: 0 auto;
+  background: #E8E8E8;
+  padding: 1rem;
+  width: 85%;
+  border-radius: 10px;
+}
 /* FOOTER */
 
 footer {
 background-color: whitesmoke;
+margin-top: 1rem;
 }
 
 .find-us .card {

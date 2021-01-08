@@ -19,6 +19,7 @@ body {
   top:0;
   color:whitesmoke;
   background-color: #2C6BBC;
+  z-index: 100;
 }
 
 .header-logo {
@@ -120,6 +121,7 @@ iframe {
   color: white;
   width: 75%;
   text-align: center;
+  z-index: 1;
 }
 
 .slide-text a {
@@ -168,8 +170,7 @@ iframe {
   width: 100%;
   margin: auto;
   position: relative;
-  z-index:-1;
-}
+ }
 
 .slide-container .slide {
   display: none;

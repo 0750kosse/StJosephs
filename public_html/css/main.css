@@ -6,6 +6,7 @@ html, body {
  }
 
 body {
+  font-family: 'Lato', sans-serif;
   font-size: 18px;
   background-color: whitesmoke;
 }
@@ -49,16 +50,15 @@ body {
 }
 
 .operative {
-  position:absolute;
+  position:relative;
   display: flex;
   flex-direction: column;
-  top:8rem;
-  left: 5rem;
-  width: 60%;
-  margin-left: 1rem;
-  font-size: 30px;
-  padding: 2rem;
+  top:1rem;
+  width: 100%;
+  top:7rem;
   line-height: 1.2;
+  position: sticky;
+  z-index: 90;
  }
 
 .operative a {
@@ -86,8 +86,9 @@ main {
 
 .main-picture {
   width: 100%;
-  height: 18rem;
-}
+  height: 12rem;
+  object-fit: cover;
+ }
 
 /* SLIDER */
 
@@ -170,7 +171,7 @@ iframe {
   width: 100%;
   margin: auto;
   position: relative;
- }
+}
 
 .slide-container .slide {
   display: none;
@@ -217,21 +218,7 @@ iframe {
 
 /* DONATE */
 .donate {
-  margin: 0 auto;
-  background: #E8E8E8;
-  padding: 1rem;
-  width: 85%;
-  border-radius: 10px;
-}
-/* FOOTER */
-
-footer {
-background-color: whitesmoke;
-margin-top: 1rem;
-}
-
-.find-us .card {
-  display: flex;
+  display:flex;
   flex-direction: column;
   margin: 0 auto;
   background: #E8E8E8;
@@ -240,29 +227,108 @@ margin-top: 1rem;
   border-radius: 10px;
 }
 
-.find-us .card h3 {
+.donate h2 {
   text-align: center;
-  margin:0;
+  color:#2C6BBC;
+}
+
+.donate p {
+  margin: 0 auto;
+  padding-bottom:1rem;
+}
+
+.donate-info {
+  width: 45%;
+  margin:0 auto;
+  background: #88C449;
+  color:white;
+  text-align: center;
+  padding: .5rem;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+}
+
+.donate-info a {
+  text-decoration: none;
+  color: white;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: whitesmoke;
+  margin-top: 1rem;
+}
+
+.find-us {
+  margin-top:1rem;
+}
+
+.find-us .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  background: #E8E8E8;
+  padding: 1rem;
+  width: 85%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.find-us .card h2,
+.contact-us_container h2 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color:#2C6BBC;
 }
 
 .find-us .card p {
-  border-bottom:1px solid grey; 
+  text-align: center;
 }
 
-.find-us .social {
+.find-us .email p {
+  text-align: start;
+}
+
+.contact-us_container {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-flow: row wrap;
+  margin:0 auto;
+  background: #E8E8E8;
   padding: 1rem;
-  margin: 0 auto;
+  width: 85%;
+  border-radius: 10px;
+  justify-content: space-around;
 }
 
-.find-us .twitter {
-  width: 60%;
-} 
-.find-us .youtube {
+.contact-us_container h2 {
+  margin:0;
+}
+
+.twitter{
+  width: 70%;
+}
+
+.youtube {
+  width: 90%;
+  margin-top:1rem;
+}
+
+.contact-us_social {
   width: 50%;
-  margin: 10% 0 0 30%;
+ }
+
+.contact-us_social a {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.fa-envelope {
+  color:#2C6BBC;
+  margin-bottom: 1rem;
 }
 
 .footer-credits {
@@ -270,9 +336,88 @@ margin-top: 1rem;
   color:#88C449;
   text-align: center;
 }
+
 .footer-credits a {
   color: #88C449;
   text-decoration:none;
 }
 
+.red {
+  color:red;
+}
 
+@media only screen and (min-width: 768px) {
+  .header-title {
+   margin-left: -2rem;
+  }
+
+  .find-us .card {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-bottom: 3rem;
+  }
+
+  .find-us .card h2 {
+    display: block;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .twitter {
+   width: 60%;
+  }
+
+  .youtube {
+    margin-top: .5rem;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .youtube {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  body, html {
+    max-width: 1201px;
+    margin:0 auto;
+    font-size: 22px;
+  }
+
+  .donate,
+  .find-us .card,
+  .contact-us_container {
+    width: 92%;
+  }
+    
+  .slide-text {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+
+  .aside-container_link a p{
+    line-height: 3rem;
+  }
+    
+  .donate-info a p {
+    padding: 1rem;
+  }
+
+  .find-us_map {
+    width: 40%;
+  }
+ 
+  .twitter {
+    width: 45%;
+    margin-left: 30%;
+  }
+ 
+  .youtube {
+    margin-top: .7rem;
+    width: 60%;
+  }
+}
+  

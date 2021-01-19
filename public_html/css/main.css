@@ -262,6 +262,7 @@ footer {
 
 .find-us {
   margin-top:1rem;
+
 }
 
 .find-us .card {
@@ -290,6 +291,18 @@ footer {
 
 .find-us .email p {
   text-align: start;
+}
+
+.find-us_map {
+  width:90%;
+  object-fit: cover;
+}
+
+.find-us_location {
+  width:90%;
+  margin:1rem 0;
+  border-radius: 10px;
+  box-shadow:2px 2px 5px #888888;
 }
 
 .contact-us_container {
@@ -363,7 +376,11 @@ footer {
     width: 100%;
     margin-bottom: 3rem;
   }
-
+  .find-us_map,
+  .find-us_location {
+    width: 45%;
+    height: 270px;
+  }
   .twitter {
    width: 60%;
   }
@@ -375,6 +392,11 @@ footer {
 }
 
 @media only screen and (min-width: 1024px) {
+
+  .find-us_location p {
+    margin-top:2rem;
+  }
+
   .youtube {
     margin-top: 1rem;
   }
@@ -406,10 +428,12 @@ footer {
     padding: 1rem;
   }
 
-  .find-us_map {
-    width: 40%;
+  .find-us_map,
+  .find-us_location {
+    width: 45%;
+    height: 350px;
   }
- 
+
   .twitter {
     width: 45%;
     margin-left: 30%;

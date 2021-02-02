@@ -447,7 +447,6 @@ footer {
   }
 }
   
-
 /* DONATE  */
 
 .donate-header {
@@ -456,16 +455,22 @@ footer {
 }
 
 .donate-header_image {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  object-fit:cover;
 } 
 
 .donate-content {
-  padding : 0 .8rem;
+  margin:0 auto;
+  background: #88C449;
+  color:white;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
+
 .donate-content_title {
   color: #2C6BBC;
-  padding: 0 .4rem;
   text-align: center;
   font-weight: 900;
 }

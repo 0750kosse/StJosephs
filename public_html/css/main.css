@@ -9,6 +9,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 18px;
   background-color: whitesmoke;
+  line-height:1.6rem;
 }
  /* HEADER */
 
@@ -33,6 +34,7 @@ body {
   margin:3rem 0 0 0;
   font-size:20px;
   margin-left: -4%;
+  max-width: 50%;
 }
 
 .header-hamburguer {
@@ -445,3 +447,25 @@ footer {
   }
 }
   
+
+/* DONATE  */
+
+.donate-header {
+  max-height: 450px;
+  overflow:hidden;
+}
+
+.donate-header_image {
+  max-width: 100%;
+  height: auto;
+} 
+
+.donate-content {
+  padding : 0 .8rem;
+}
+.donate-content_title {
+  color: #2C6BBC;
+  padding: 0 .4rem;
+  text-align: center;
+  font-weight: 900;
+}

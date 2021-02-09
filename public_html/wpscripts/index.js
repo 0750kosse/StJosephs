@@ -1,16 +1,19 @@
-const mobileMenu = document.querySelector(".header-hamburguer");
-const menuLinks = document.querySelector(".nav-links");
+const navLinks = document.querySelector(".nav-links");
+const openCloseIcon = document.getElementById('icon');
 
-function mobileLinksToggle() {
-  if (menuLinks.style.display === "flex") {
-    mobileMenu.className = "header-hamburguer fa fa-bars fa-2x"
-    menuLinks.style.display = "none";
-  } else {
-    menuLinks.style.display = "flex";
-    menuLinks.className = "operative";
-    mobileMenu.className = "header-hamburguer fa fa-times fa-2x"
-  }
+function changeIcon() {
+  navLinks.classList.contains('on') ?
+    openCloseIcon.classList.replace('fa-bars', 'fa-times') :
+    openCloseIcon.classList.replace('fa-times', 'fa-bars')
 }
+
+openCloseIcon.addEventListener('click', toggleMenu)
+
+function toggleMenu() {
+  navLinks.classList.toggle("on");
+  changeIcon();
+}
+
 
 let currentSlide = 0;
 const slides = document.querySelectorAll(".slide")

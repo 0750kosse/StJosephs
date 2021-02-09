@@ -1,8 +1,8 @@
 html, body {
   margin: 0;
-	padding: 0;
+  padding: 0;
   border: 0;
-  width: fit-content;
+  max-width: 1280px;
  }
 
 body {
@@ -10,31 +10,33 @@ body {
   font-size: 18px;
   background-color: whitesmoke;
   line-height:1.6rem;
+  
 }
  /* HEADER */
 
 .header {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  align-items:center; 
+  
   overflow: hidden;
   position: sticky;
   top:0;
   color:whitesmoke;
+  z-index: 1;
   background-color: #2C6BBC;
-  z-index: 100;
+  padding: .5rem 1rem;
 }
 
 .header-logo {
- margin:0 1rem;
- max-width: 50%;
+ max-width: 85%;
 }
 
 .header-title {
-  text-align: center;
-  margin:3rem 0 0 0;
-  font-size:20px;
-  margin-left: -4%;
-  max-width: 50%;
+  font-size: 18px;
+  max-width: 40%;
+  margin-right: 25%;
 }
 
 .header-hamburguer {
@@ -48,42 +50,53 @@ body {
 /* NAV ITEMS*/
 
 .nav-links {
-  display: none;
-}
-
-.operative {
-  position:relative;
-  display: flex;
-  flex-direction: column;
-  top:1rem;
+  position:fixed;
+  line-height: 1.4;
   width: 100%;
-  top:7rem;
-  line-height: 1.2;
-  position: sticky;
-  z-index: 90;
- }
-
-.operative a {
-  text-decoration: none;
-  background-color:whitesmoke;
-  color:black;
-  padding: 1rem;
-  border-bottom:1px solid whitesmoke;
+  padding: 0;
+  left:100%;
+  transition: .5s;
+  background: lightgrey;
+  z-index: 2;
 }
 
-#myLinks a:hover {
+.nav-links ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links.on {
+  left:0;
+}
+
+.nav-links ul li {
+  list-style: none;
+  height: 2rem;
+  width: 100%;
+  border-bottom: 1px solid whitesmoke;
+  padding: .7rem;
+}
+
+.nav-links ul li a  {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.on a {
+  text-decoration: none;
+  transition: .5s;
+}
+
+.nav-links ul li:hover {
   background-color: #88C449;
   color: white;
+  transition:0.5s;
 }
 
 /* MAIN SECTION */
 
 main {
- padding-top:1rem;
-}
-
-.main-text {
-  padding: 1rem;
+  margin-top:0;
 }
 
 .main-picture {
@@ -92,7 +105,11 @@ main {
   object-fit: cover;
  }
 
-/* SLIDER */
+ .main p {
+   margin: .8rem;
+ }
+
+/* SLIDER SECTION */
 
 iframe {
   width: 100vw;
@@ -192,7 +209,7 @@ iframe {
   height: 400px;
 }
 
-/* ASIDE */
+/* ASIDE SECTION */
 
 .aside-container {
   margin-top: 3rem;;
@@ -218,7 +235,8 @@ iframe {
   color: white;
 }
 
-/* DONATE */
+/* DONATE SECTION */
+
 .donate {
   display:flex;
   flex-direction: column;
@@ -255,7 +273,7 @@ iframe {
   color: white;
 }
 
-/* FOOTER */
+/* FOOTER SECTION */
 
 footer {
   background-color: whitesmoke;
@@ -264,7 +282,6 @@ footer {
 
 .find-us {
   margin-top:1rem;
-
 }
 
 .find-us .card {
@@ -357,14 +374,11 @@ footer {
   text-decoration:none;
 }
 
-.red {
-  color:red;
-}
-
 @media only screen and (min-width: 768px) {
-  .header-title {
-   margin-left: -2rem;
-  }
+
+ .header {
+   justify-content: flex-start;
+ }
 
   .find-us .card {
     display: flex;
@@ -395,6 +409,53 @@ footer {
 
 @media only screen and (min-width: 1024px) {
 
+ .header {
+   width: 50%;
+ }
+
+  /* RESPONSIVE NAVBAR */
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #2C6BBC;
+  }
+
+  #icon {
+    display: none;
+  }
+
+  .nav-links {
+    position: inherit;
+    align-self: center;
+    margin-right: 5%;
+    background-color: #2C6BBC;
+    transition: 0s;
+    width: 50%;
+  }
+
+  .nav-links ul {
+    display: flex;
+  }
+
+  .nav-links ul li {
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    border-bottom: none;
+    font-size: 20px;
+    width: 60%;
+  }
+
+  .nav-links ul li:hover {
+    border-radius: 15px;
+    background-color: #88C449;;
+    text-align: center;
+    transition: .8s;
+  }
+
+  /* NAVBAR ENDS */
+
   .find-us_location p {
     margin-top:2rem;
   }
@@ -406,7 +467,6 @@ footer {
 
 @media only screen and (min-width: 1201px) {
   body, html {
-    max-width: 1201px;
     margin:0 auto;
     font-size: 22px;
   }
@@ -416,7 +476,7 @@ footer {
   .contact-us_container {
     width: 92%;
   }
-    
+
   .slide-text {
     font-size: 22px;
     line-height: 1.5;
@@ -447,7 +507,7 @@ footer {
   }
 }
   
-/* DONATE  */
+/* DONATE PAGE */
 
 .donate-header {
   max-height: 450px;

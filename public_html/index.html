@@ -18,20 +18,24 @@
 </head>
 
 <body>
-  <div class="header">
-    <a href="#home">
-      <img class="header-logo" src="css/wpimages/wp720cab5e_06.png" alt="Church Logo">
-    </a>
-    <h1 class="header-title">St. Joseph's Church Highgate</h1>
-    <i class="header-hamburguer fa fa-bars fa-2x" onclick="mobileLinksToggle()"></i>
+  <div class="nav-bar">
+    <div class="header">
+      <a href="#home">
+        <img class="header-logo" src="css/wpimages/wp720cab5e_06.png" alt="Church Logo">
+      </a>
+      <h1 class="header-title">St. Joseph's Church Highgate</h1>
+      <i class="header-hamburguer fa fa-bars fa-2x" id="icon"></i>
+    </div>
+    <nav class="nav-links" id="myLinks">
+      <ul>
+        <li><a href="#parishlife">Parish Life</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#links">Links</a></li>
+      </ul>
+    </nav>
   </div>
-  <nav class="nav-links" id="myLinks">
-    <a href="#parishlife">Parish Life</a>
-    <a href="#about">About Us</a>
-    <a href="#contact">Contact</a>
-    <a href="#links">Links</a>
-  </nav>
-  <main>
+  <main class="main">
     <section class="main-text">
       <p> St. Joseph’s is a busy parish community in Highgate, North London with a
         warm and lively atmosphere.</p>
@@ -178,20 +182,20 @@
           <p class="find-us email">Father George: <br><a href="mailto:gaskoloth@hotmail.com">gaskoloth@hotmail.com</a>
           </p>
         </div>
-      </div>
-      <div class="contact-us_container">
-        <h2>Follow Us</h2>
-        <div class="contact-us_social">
-          <a class="twitter" href="https://twitter.com/StJosephs_N19" target="_blank">
-            <img class="twitter" src="css/wpimages\Twitter_Logo_Blue.png" alt="Twitter logo" />
-          </a>
+        <div class="contact-us_container">
+          <div class="contact-us_social">
+            <a class="twitter" href="https://twitter.com/StJosephs_N19" target="_blank">
+              <img class="twitter" src="css/wpimages\Twitter_Logo_Blue.png" alt="Twitter logo" />
+            </a>
+          </div>
+          <div class="contact-us_social">
+            <a class="youtube" href="https://www.youtube.com/channel/UCt8B8lHTt0GOYGYC8xyowlA" target="_blank">
+              <img class="youtube" src="css/wpimages\yt_logo_rgb_light.png" alt="Youtube logo" />
+            </a>
+          </div>
         </div>
-        <div class="contact-us_social">
-          <a class="youtube" href="https://www.youtube.com/channel/UCt8B8lHTt0GOYGYC8xyowlA" target="_blank">
-            <img class="youtube" src="css/wpimages\yt_logo_rgb_light.png" alt="Youtube logo" />
-          </a>
-        </div>
       </div>
+
     </div>
     <p class="footer-credits">Made with <span class="red"> &nbsp; &hearts; &nbsp;</span> by <a
         href="https://github.com/0750kosse">0750kosse</a>

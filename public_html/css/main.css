@@ -442,7 +442,7 @@ footer {
     top: 2.7rem;
     align-self: center;
     margin-right: 5%;
-    margin-left: 48%;
+    margin-left: 55%;
     background-color: #2C6BBC;
     transition: 0s;
     width: 50%;
@@ -452,7 +452,7 @@ footer {
     display: flex;
     margin-top: 1%;
     position: fixed;
-    width: 50%;
+    width:30rem;
   }
 
   .nav-links ul li {
@@ -492,8 +492,13 @@ footer {
     margin-bottom: 10rem;
   }
 
+  .nav-links {
+    margin-left: 48%;
+  }
+
   .nav-links ul {
    margin-top: 0;
+   width: 27rem;
   }
  
   .donate,

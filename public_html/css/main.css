@@ -19,22 +19,23 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items:center; 
-  
   overflow: hidden;
-  position: sticky;
+  position: fixed;
   top:0;
+  right: 0;
+  left: 0;
   color:whitesmoke;
-  z-index: 1;
+  z-index: 2;
   background-color: #2C6BBC;
   padding: .5rem 1rem;
 }
 
 .header-logo {
- max-width: 85%;
+  max-width: 85%;
 }
 
 .header-title {
-  font-size: 18px;
+  font-size: 20px;
   max-width: 40%;
   margin-right: 25%;
 }
@@ -49,6 +50,10 @@ body {
 
 /* NAV ITEMS*/
 
+.nav-bar {
+  margin-bottom: 12rem;
+}
+
 .nav-links {
   position:fixed;
   line-height: 1.4;
@@ -58,6 +63,7 @@ body {
   transition: .5s;
   background: lightgrey;
   z-index: 2;
+  top: 10.5rem;
 }
 
 .nav-links ul {
@@ -105,7 +111,7 @@ main {
   object-fit: cover;
  }
 
- .main p {
+.main p {
    margin: .8rem;
  }
 
@@ -392,11 +398,13 @@ footer {
     width: 100%;
     margin-bottom: 3rem;
   }
+
   .find-us_map,
   .find-us_location {
     width: 45%;
     height: 270px;
   }
+
   .twitter {
    width: 60%;
   }
@@ -409,26 +417,32 @@ footer {
 
 @media only screen and (min-width: 1024px) {
 
- .header {
-   width: 50%;
- }
+  .header {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
 
   /* RESPONSIVE NAVBAR */
+
   .nav-bar {
     display: flex;
     flex-direction: row;
     width: 100%;
     background-color: #2C6BBC;
-  }
+  } 
 
   #icon {
     display: none;
   }
 
   .nav-links {
-    position: inherit;
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 2.7rem;
     align-self: center;
     margin-right: 5%;
+    margin-left: 48%;
     background-color: #2C6BBC;
     transition: 0s;
     width: 50%;
@@ -436,6 +450,9 @@ footer {
 
   .nav-links ul {
     display: flex;
+    margin-top: 1%;
+    position: fixed;
+    width: 50%;
   }
 
   .nav-links ul li {
@@ -471,6 +488,14 @@ footer {
     font-size: 22px;
   }
 
+  .nav-bar {
+    margin-bottom: 10rem;
+  }
+
+  .nav-links ul {
+   margin-top: 0;
+  }
+ 
   .donate,
   .find-us .card,
   .contact-us_container {
@@ -505,7 +530,7 @@ footer {
     margin-top: .7rem;
     width: 60%;
   }
-}
+} 
   
 /* DONATE PAGE */
 

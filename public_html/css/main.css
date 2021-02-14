@@ -31,7 +31,7 @@ body {
 }
 
 .header-logo {
-  max-width: 85%;
+  max-width: 60%;
 }
 
 .header-title {
@@ -51,19 +51,19 @@ body {
 /* NAV ITEMS*/
 
 .nav-bar {
-  margin-bottom: 12rem;
+  margin-bottom: 10rem;
 }
 
 .nav-links {
   position:fixed;
-  line-height: 1.4;
+  /* line-height: 1.4; */
   width: 100%;
   padding: 0;
   left:100%;
   transition: .5s;
   background: lightgrey;
   z-index: 2;
-  top: 10.5rem;
+  top: 7.5rem;
 }
 
 .nav-links ul {
@@ -78,7 +78,6 @@ body {
 .nav-links ul li {
   list-style: none;
   height: 2rem;
-  width: 100%;
   border-bottom: 1px solid whitesmoke;
   padding: .7rem;
 }
@@ -218,20 +217,15 @@ iframe {
 /* ASIDE SECTION */
 
 .aside-container {
-  margin-top: 3rem;;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  margin-top: 1rem;
 }
 
 .aside-container_link {
-  width: 45%;
   height: 5rem;
-  background: #88C449;
   color:white;
   text-align: center;
   padding: .3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 15rem;
   border-radius: 15px;
 }
 
@@ -241,40 +235,58 @@ iframe {
   color: white;
 }
 
+.aside-container_link a p{
+  height: 2rem;
+  line-height: 1.2;
+}
+
+.aside-pics {
+  object-fit: fill;
+  width: 100%;
+  height: auto;
+}
+
+.aside-text {
+  background: #88C449;
+  position: relative;
+  top: -5.5rem;
+  padding: .5rem 0;
+  opacity: .90;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
 /* DONATE SECTION */
 
-.donate {
+.side-container {
   display:flex;
   flex-direction: column;
-  margin: 0 auto;
+}
+
+.side-item {
+  margin-bottom: 1rem;
   background: #E8E8E8;
   padding: 1rem;
-  width: 85%;
   border-radius: 10px;
-}
-
-.donate h2 {
   text-align: center;
-  color:#2C6BBC;
 }
 
-.donate p {
-  margin: 0 auto;
-  padding-bottom:1rem;
+.side-item  h2 {
+ color:#2C6BBC;
 }
 
-.donate-info {
+.side-item__info {
   width: 45%;
   margin:0 auto;
   background: #88C449;
   color:white;
   text-align: center;
-  padding: .5rem;
+  padding: .1rem;
   margin-bottom: 1rem;
   border-radius: 15px;
 }
 
-.donate-info a {
+.side-item__info  a {
   text-decoration: none;
   color: white;
 }
@@ -283,12 +295,7 @@ iframe {
 
 footer {
   background-color: whitesmoke;
-  margin-top: 1rem;
-}
-
-.find-us {
-  margin-top:1rem;
-}
+ }
 
 .find-us .card {
   display: flex;
@@ -297,9 +304,6 @@ footer {
   margin: 0 auto;
   background: #E8E8E8;
   padding: 1rem;
-  width: 85%;
-  border-radius: 10px;
-  margin-bottom: 1rem;
 }
 
 .find-us .card h2,
@@ -308,6 +312,7 @@ footer {
   width: 100%;
   text-align: center;
   color:#2C6BBC;
+  margin-top: 0;
 }
 
 .find-us .card p {
@@ -335,10 +340,9 @@ footer {
   flex-flow: row wrap;
   margin:0 auto;
   background: #E8E8E8;
-  padding: 1rem;
   width: 85%;
   border-radius: 10px;
-  justify-content: space-around;
+  align-items: center;
 }
 
 .contact-us_container h2 {
@@ -346,23 +350,19 @@ footer {
 }
 
 .twitter{
-  width: 70%;
+  width: 65%;
+  margin-left: 1rem;
 }
 
 .youtube {
-  width: 90%;
-  margin-top:1rem;
+  width: 80%;
+  margin-left: 2rem;
 }
 
 .contact-us_social {
-  width: 50%;
- }
-
-.contact-us_social a {
   display: flex;
-  flex-direction: column;
-  align-items:center;
-}
+  max-width: 45%;
+ }
 
 .fa-envelope {
   color:#2C6BBC;
@@ -373,6 +373,7 @@ footer {
   background-color:#505050;
   color:#88C449;
   text-align: center;
+  margin:0;
 }
 
 .footer-credits a {
@@ -386,17 +387,25 @@ footer {
    justify-content: flex-start;
  }
 
-  .find-us .card {
+ aside {
+   display: flex; 
+   flex-direction: row;
+   margin: 0 auto;
+ }
+
+ .side-item__info {
+   width: 25%;
+ }
+
+ .find-us .card {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    padding-bottom: 3rem;
   }
 
   .find-us .card h2 {
     display: block;
     width: 100%;
-    margin-bottom: 3rem;
   }
 
   .find-us_map,
@@ -407,10 +416,11 @@ footer {
 
   .twitter {
    width: 60%;
+   margin-left: 3rem;
   }
 
   .youtube {
-    margin-top: .5rem;
+    margin-left: 4rem;
     width: 80%;
   }
 }
@@ -435,24 +445,17 @@ footer {
     display: none;
   }
 
-  .nav-links {
-    position: relative;
-    right: 0;
-    left: 0;
-    top: 2.7rem;
-    align-self: center;
-    margin-right: 5%;
-    margin-left: 54%;
-    background-color: #2C6BBC;
-    transition: 0s;
-    width: 50%;
+  .nav-bar {
+    margin-bottom: 12rem;
   }
 
   .nav-links ul {
+    background-color: #88C449;
+    width: 100%;
     display: flex;
-    margin-top: 1%;
     position: fixed;
-    width:29rem;
+    right: 0;
+    justify-content: space-evenly;
   }
 
   .nav-links ul li {
@@ -460,25 +463,36 @@ footer {
     align-items: center;
     text-align: center;
     border-bottom: none;
-    font-size: 20px;
-    width: 60%;
+    margin: 0 1rem;
+    font-size: 16px;
   }
 
   .nav-links ul li:hover {
-    border-radius: 15px;
-    background-color: #88C449;;
-    text-align: center;
-    transition: .8s;
+    transition:none;
+    padding: .7rem 0;
+    font-size: 20px;
+    margin: 0 1rem;
+    transition: .2s;
   }
 
   /* NAVBAR ENDS */
 
-  .find-us_location p {
-    margin-top:2rem;
+  .side-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
-  .youtube {
-    margin-top: 1rem;
+  .side-item {
+    width: 45%;
+  }
+
+  .side-item__info {
+    width: 31%;
+  }
+
+  .find-us_location p {
+    margin-top:2rem;
   }
 }
 
@@ -488,35 +502,39 @@ footer {
     font-size: 22px;
   }
 
-  .nav-bar {
-    margin-bottom: 10rem;
+  .header {
+    height: 6rem;
   }
 
-  .nav-links {
-    margin-left: 48%;
+  .nav-bar {
+    margin-bottom: 11rem;
   }
 
   .nav-links ul {
-   margin-top: 0;
-   width: 27rem;
-  }
- 
-  .donate,
-  .find-us .card,
-  .contact-us_container {
-    width: 92%;
+    padding: 0;
+    max-width: 1324px;
+    margin: 0 auto;
+    top: 7rem;
+    left: 0;
+    height: 2.5rem;
+    align-items: center;
   }
 
-  .slide-text {
+ .nav-links ul li:hover {
+   background: none;
+ }
+ 
+ .slide-text {
     font-size: 22px;
     line-height: 1.5;
   }
 
-  .aside-container_link a p{
-    line-height: 3rem;
+  .side-item__info {
+    padding: 0;
+    width: 40%;
   }
     
-  .donate-info a p {
+  .side-item__info a p {
     padding: 1rem;
   }
 
@@ -528,11 +546,11 @@ footer {
 
   .twitter {
     width: 45%;
-    margin-left: 30%;
+    margin-left: 8rem;
   }
  
   .youtube {
-    margin-top: .7rem;
+    margin-left: 2rem;
     width: 60%;
   }
 } 

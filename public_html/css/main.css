@@ -621,3 +621,17 @@ footer {
       object-position: 0 -100vh;
   }
 }
+
+/* PARISH GROUPS */
+
+.section-content.parish {
+  margin-top: -2.5rem;
+}
+
+.counselling {
+  margin-top: 3rem;
+}
+
+.section-image.parish {
+  margin: -1rem 0;
+}

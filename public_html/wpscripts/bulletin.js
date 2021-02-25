@@ -143,15 +143,20 @@ const bulletins = [
 const bulletinDiv = document.getElementById('bulletins')
 
 function bulletinDisplay() {
-  bulletins.map(bulletin => {
-    const { path, date } = bulletin;
-    const url = `http://www.stjosephshighgate.org.uk/${path}`
-    return bulletinDiv.innerHTML += `
-      <a href="${url}" class="">
-        <p class="bulletin">${date}</p>
-      </a>
-    `
-  })
+  if (bulletinDiv) {
+    bulletins.map(bulletin => {
+      const { path, date } = bulletin;
+      const url = `http://www.stjosephshighgate.org.uk/${path}`
+      return bulletinDiv.innerHTML += `
+      <ul>
+        <a href="${url}" class="">
+          <li class="bulletin">${date}</li>
+        </a>
+      </ul>
+      `
+    })
+  }
+
 }
 
 export default bulletinDisplay;

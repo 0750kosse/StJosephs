@@ -56,7 +56,6 @@ body {
 
 .nav-links {
   position:fixed;
-  /* line-height: 1.4; */
   width: 100%;
   padding: 0;
   left:100%;
@@ -644,25 +643,12 @@ footer {
 
 /* BULLETINS */
 
-.bulletin-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-}
-
 .bulletin-container a {
   text-decoration: none;
 }
 
-.bulletin {
-  border:1px solid lightgrey;
-  width: 150px;
-  height: 100px;
-  text-align: center;
-  padding-top: 25%;
-  }
-
 .bulletin:hover {
   background: #2C6BBC;
   color: white;
+  width: 50%;
 }

@@ -156,7 +156,6 @@ function bulletinDisplay() {
       `
     })
   }
-
 }
 
 export default bulletinDisplay;

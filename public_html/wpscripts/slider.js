@@ -26,7 +26,7 @@ function sliderInit() {
       currentSlide <= 0 ? currentSlide = slides.length - 1 : currentSlide--
       init(currentSlide)
     }
-    console.log("about to init ", slides.length, dots)
+
     init(currentSlide)
 
     if (next && prev) {

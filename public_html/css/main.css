@@ -38,6 +38,13 @@ body {
   font-size: 20px;
   max-width: 40%;
   margin-right: 25%;
+  margin-left: -8%;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-title {
+    margin-left: -2%;
+  }
 }
 
 .header-hamburguer {
@@ -623,13 +630,44 @@ footer {
 }
 
 /* BULLETINS */
+.bulletin-container {
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
 
 .bulletin-container a {
   text-decoration: none;
+}
+
+.bulletin-title {
+  text-align: center;
+}
+
+.bulletin {
+  margin-bottom: .3rem;
+  padding: 0 .3rem;
 }
 
 .bulletin:hover {
   background: #2C6BBC;
   color: white;
   width: 50%;
+}
+
+/* ABOUT US */
+.section-content.about,
+.section-content.history {
+  margin-bottom: 0;
+  padding: 0 1rem;
+  text-align: start;
+}
+
+.section-content_image {
+  margin:0 auto;
+  width: 100%;
+}
+
+.section-content_image-caption {
+  text-align: center;
+  font-style: italic;
 }

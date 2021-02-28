@@ -148,12 +148,9 @@ function bulletinDisplay() {
       const { path, date } = bulletin;
       const url = `http://www.stjosephshighgate.org.uk/${path}`
       return bulletinDiv.innerHTML += `
-      <ul>
-        <a href="${url}" class="">
-          <li class="bulletin">${date}</li>
-        </a>
-      </ul>
-      `
+        <li class="bulletin">${date}
+        <a href="${url}" class=""></a></li>
+       `
     })
   }
 }

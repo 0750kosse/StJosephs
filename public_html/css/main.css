@@ -10,6 +10,7 @@ body {
   font-size: 18px;
   background-color: whitesmoke;
   line-height:1.6rem;
+  color: #1C4578;
 }
  /* HEADER */
 
@@ -59,7 +60,7 @@ body {
   padding: 0;
   left:100%;
   transition: .5s;
-  background: lightgrey;
+  background: #efefef;
   z-index: 2;
   top: 7.5rem;
 }
@@ -67,32 +68,27 @@ body {
 .nav-links ul {
   margin: 0;
   padding: 0;
-
 }
 
 @media only screen and (min-width: 1024px) {
   .nav-links ul {
-    background-color: #88C449;
+    background-color: #e4e4e4;
+    max-width: 1324px;
     width: 100%;
     display: flex;
     position: fixed;
     right: 0;
-    justify-content: space-evenly;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .nav-links ul {
-    padding: 0;
-    max-width: 1324px;
-    margin: 0 auto;
-    top: 7rem;
     left: 0;
+    justify-content: space-evenly;
     height: 2.5rem;
-    align-items: center;
   }
 }
-
-
+@media only screen and (min-width: 1201px) {
+  .nav-links ul {
+    top: 7rem;
+    margin: 0 auto;
+  }
+}
 
 .nav-links.on {
   left:0;
@@ -105,9 +101,21 @@ body {
   padding: .7rem;
 }
 
+@media only screen and (min-width:1024px) {
+  .nav-links ul li {
+   border-bottom: none;
+   font-size: 16px;
+   height: auto;
+   padding: 0;
+   line-height: 2.5rem;
+  }
+}
+
 .nav-links ul li a  {
   text-decoration: none;
-  color: whitesmoke;
+  color: #1C4578;
+  font-weight: 900;
+  padding: 0 1rem;
 }
 
 .on a {
@@ -116,9 +124,13 @@ body {
 }
 
 .nav-links ul li:hover {
-  background-color: #88C449;
-  color: white;
+  background-color: #2C6BBC;
   transition:0.5s;
+  color: white;
+}
+
+.nav-links ul li:hover a {
+  color: inherit;
 }
 
 /* MAIN SECTION */
@@ -195,6 +207,7 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  margin-bottom: 1rem;
 }
 
 .dots-container .dot {
@@ -234,7 +247,7 @@ iframe {
 }
 
 .slide.fade img, .slide-item {
-  height: 400px;
+  height: 450px;
 }
 
 /* ASIDE SECTION */
@@ -287,24 +300,27 @@ iframe {
 }
 
 .side-item {
-  margin-bottom: 1rem;
-  background: #E8E8E8;
+  background: #f3f3f3;
   padding: 1rem;
   border-radius: 10px;
   text-align: center;
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  box-shadow: 2px 2px 5px #888888;
 }
 
-.side-item  h2 {
- color:#2C6BBC;
+.side-item h2 {
+ color:#1C4578;
 }
 
 .side-item__info {
   width: 45%;
   margin:0 auto;
-  background: #88C449;
+  background: #2C6BBC;
   color:white;
   text-align: center;
-  padding: .1rem;
+  padding: .1rem 1rem;
   margin-bottom: 1rem;
   border-radius: 15px;
 }
@@ -325,7 +341,7 @@ footer {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  background: #E8E8E8;
+  background: #f1f1f1;
   padding: 1rem;
 }
 
@@ -334,7 +350,7 @@ footer {
   display: block;
   width: 100%;
   text-align: center;
-  color:#2C6BBC;
+  color:#1C4578;
   margin-top: 0;
 }
 
@@ -362,7 +378,7 @@ footer {
   display: flex;
   flex-flow: row wrap;
   margin:0 auto;
-  background: #E8E8E8;
+  background: #f1f1f1;
   width: 85%;
   border-radius: 10px;
   align-items: center;
@@ -406,16 +422,6 @@ footer {
 
 @media only screen and (min-width: 768px) {
 
- .header {
-   justify-content: flex-start;
- }
-
- aside {
-   display: flex; 
-   flex-direction: row;
-   margin: 0 auto;
- }
-
  .side-item__info {
    width: 25%;
  }
@@ -457,49 +463,12 @@ footer {
 
   /* RESPONSIVE NAVBAR */
 
-  .nav-bar {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    background-color: #2C6BBC;
-  } 
-
   #icon {
     display: none;
   }
 
   .nav-bar {
     margin-bottom: 12rem;
-  }
-
-  /* .nav-links ul {
-    background-color: #88C449;
-    width: 100%;
-    display: flex;
-    position: fixed;
-    right: 0;
-    justify-content: space-evenly;
-  } */
-
-  .nav-links ul li {
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    border-bottom: none;
-    /* margin: 0 1rem; */
-    font-size: 16px;
-    height: auto;
-    padding: 0;
-    line-height: 2.5rem;
-  }
-
-  .nav-links ul li:hover {
-    
-    
- 
-    /* transition: .2s; */
-    border: 1px solid red;
-    color: red;
   }
 
   /* NAVBAR ENDS */
@@ -537,20 +506,6 @@ footer {
     margin-bottom: 11rem;
   }
 
-  /* .nav-links ul {
-    padding: 0;
-    max-width: 1324px;
-    margin: 0 auto;
-    top: 7rem;
-    left: 0;
-    height: 2.5rem;
-    align-items: center;
-  } */
-
- .nav-links ul li:hover {
-   background: none;
- }
- 
  .slide-text {
     font-size: 22px;
     line-height: 1.5;
@@ -598,15 +553,13 @@ footer {
 
 .section-content {
   margin:0 auto;
-  background: #88C449;
-  color:white;
   text-align: center;
   padding: 1rem;
   margin-bottom: 1rem;
 }
 
 .section-content_title {
-  color: #2C6BBC;
+  color: #1C4578;
   text-align: center;
   font-weight: 900;
 }
@@ -622,10 +575,6 @@ footer {
   object-position: 0 -30vh;
   height: 20rem;
   margin-top: -1rem;
-}
-
-.sacramental-prep_rcia {
-  margin-top: 3rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -647,6 +596,10 @@ footer {
       height: 30rem;
       object-position: 0 -100vh;
   }
+}
+
+.sacramental-prep_rcia {
+  margin-top: 3rem;
 }
 
 /* PARISH GROUPS */

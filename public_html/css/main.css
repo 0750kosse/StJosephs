@@ -662,12 +662,38 @@ footer {
   text-align: start;
 }
 
-.section-content_image {
-  margin:0 auto;
-  width: 100%;
-}
-
 .section-content_image-caption {
   text-align: center;
   font-style: italic;
 }
+
+/* CHURCH HISTORY */
+
+figure {
+  display: flex;
+  flex-direction: column;
+  float: right;
+}
+@media only screen and (min-width: 768px) {
+  figure {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    padding: 1rem;
+  }
+}
+
+.section-content_image {
+  object-fit: cover;
+  max-width: 100%;
+  height: 350px;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-content_image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+

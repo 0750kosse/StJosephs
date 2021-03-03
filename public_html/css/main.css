@@ -715,7 +715,7 @@ figure {
 
 @media only screen and (min-width: 980px) {
   .section-content_text:last-child {
-    padding-bottom: 8rem;
+    padding-bottom: 10rem;
   }
 }
 

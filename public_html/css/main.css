@@ -784,6 +784,9 @@ figure {
     flex-flow: row wrap;
     justify-content: space-evenly;
   }
+  .flip-card {
+    margin: 0 2rem;
+  }
 }
 
 .flip-card {
@@ -847,7 +850,7 @@ figure {
   transform: rotateY(180deg);
   border-radius: 10px;
   box-shadow: 5px 5px 10px #888888;
-  height: 429px;
+  height: 400px;
 }
 
 .flip-card-back p {

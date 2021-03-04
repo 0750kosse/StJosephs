@@ -725,6 +725,43 @@ figure {
   }
 }
 
+/* LINKS */
+
+.side-container.links {
+  text-align:center;
+  margin:.8rem;
+}
+
+.side-item.links {
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.side-container.links h5 {
+  background: #2C6BBC;
+  color: whitesmoke;
+  margin: 0;
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+}
+
+.side-item.links a:hover {
+  background: #2C6BBC;
+  color: white;
+  text-decoration: none;
+  padding: 0 .5rem;
+
+}
+@media only screen and (min-width: 768px) {
+
+  .side-container.links {
+    flex-flow: row wrap;
+  }
+  .side-item.links {
+    width: 30%;
+  }
+}
+
 
 
 
